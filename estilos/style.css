@@ -7,6 +7,12 @@
     font-family: acumin-pro, sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+/* HOME */
+
 .introducao {
     width: 100vw;
     height: 100vh;
@@ -44,17 +50,8 @@
     width: 80px;
 }
 
-.introducao-header-nav-itens-bag {
-    width: 20px;
-}
-
-.material-symbols-outlined {
-    margin-left: 20px;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 300,
-  'GRAD' -25,
-  'opsz' 48
+.introducao-header-nav-itens-cart {
+    margin-right: 25px;
 }
 
 #idpesquisa {
@@ -113,3 +110,87 @@
     width: 40%;
 }
 
+/* HISTORIA & QUALIDADES */
+
+.historia-qualidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.qualidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.qualidade1,
+.qualidade2,
+.qualidade3 {
+    padding-right: 50px;
+}
+
+.qualidades-itens {
+    width: 60px;
+    padding: 13px;
+    border-radius: 5px;
+    background-color: #e4dfd3c2;
+}
+
+.titulo-qualidades {
+    padding-top: 20px;
+    padding-bottom: 15px;
+
+    font-size: 1.3em;
+}
+
+.descricao-qualidades {
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
+
+.historia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+.descricao-historia {
+    padding-left: 20px;
+}
+
+.titulo-about {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(36, 36, 36);
+}
+
+.about-image {
+    height: 305px;
+
+    border-radius: 5px;
+}
+
+.about-p1,
+.about-p2,
+.about-p3 {
+    padding-top: 20px;
+    color: rgb(48, 48, 48);
+    font-size: 0.9em;
+}
+
+.btn-mais {
+    width: 200px;
+    height: 40px;
+
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background-color: #BC9667;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 30px;
+}
