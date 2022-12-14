@@ -16,10 +16,10 @@
                 <a href="#" class="introducao-header-nav-itens">HOME</a>
                 <a href="#" class="introducao-header-nav-itens">SOBRE NÓS</a>
                 <a href="#" class="introducao-header-nav-itens">HISTÓRIA</a>
-                <a href="#" class="introducao-header-nav-itens">BLOGS</a>
+                <a href="#" class="introducao-header-nav-itens">PRODUTOS</a>
                 <a href="#" class="introducao-header-nav-itens">CONTATE-NOS</a>
                 <box-icon class="introducao-header-nav-itens-cart" name='cart-alt' color='#ffffff'></box-icon>
-                <box-icon id="pesquisa" name='search' color='#ffffff'></box-icon>
+                <box-icon onclick="pesquisar()" id="pesquisa" name='search' color='#ffffff' style="cursor: pointer;"></box-icon>
             </nav>
         </header>
 
@@ -96,5 +96,69 @@
             </div>
         </div>
     </section>
+
+    <section class="produtos">
+        <h2 class="produtos-titulo">NOSSOS PRODUTOS POPULARES</h2>
+
+        <div class="produtos-itens">
+            <div class="produtos-item1">
+                <img class="produto-image" src="images/p1.png" alt="alt1">
+                <box-icon id="idamei" class="item-amei" name='heart'></box-icon>
+                <box-icon class="item-compartilhar" name='share-alt'></box-icon>
+                <h2 class="produtos-item-titulo">TESTY COFFEE STIMY</h2>
+                <p style="display: inline;" class="produtos-item-preco">$25</p>
+                <button class="add-to-cart">ADICIONAR AO CARRINHO</button>
+            </div>
+
+            <div class="produtos-item2">
+                <img class="produto-image" src="images/p2.png" alt="alt2">
+                <box-icon id="idamei" class="item-amei" name='heart'></box-icon>
+                <box-icon class="item-compartilhar" name='share-alt'></box-icon>
+                <h2 class="produtos-item-titulo">AMERICANO PURE GRADES</h2>
+                <p style="display: inline;" class="produtos-item-preco">$25</p>
+                <button class="add-to-cart">ADICIONAR AO CARRINHO</button>
+            </div>
+
+            <div class="produtos-item3">
+                <img class="produto-image" src="images/p3.png" alt="alt3">
+                <box-icon id="idamei" class="item-amei" name='heart'></box-icon>
+                <box-icon class="item-compartilhar" name='share-alt'></box-icon>
+                <h2 class="produtos-item-titulo">INDIAN ROASTING PACK</h2>
+                <p style="display: inline;" class="produtos-item-preco">$25</p>
+                <button class="add-to-cart">ADICIONAR AO CARRINHO</button>
+            </div>
+
+            <div class="produtos-item4">
+                <img class="produto-image" src="images/p4.png" alt="alt4">
+                <box-icon id="idamei" class="item-amei" name='heart'></box-icon>
+                <box-icon class="item-compartilhar" name='share-alt'></box-icon>
+                <h2 class="produtos-item-titulo">BANGLADESHI ORGANIC GRADES</h2>
+                <p style="display: inline;" class="produtos-item-preco">$25</p>
+                <button class="add-to-cart">ADICIONAR AO CARRINHO</button>
+            </div>
+
+            <div class="produtos-item5">
+                <img class="produto-image" src="images/p5.png" alt="alt5">
+                <box-icon id="idamei" class="item-amei" name='heart'></box-icon>
+                <box-icon class="item-compartilhar" name='share-alt'></box-icon>
+                <h2 class="produtos-item-titulo">AMERICANO PURE GRADES</h2>
+                <p style="display: inline;" class="produtos-item-preco">$25</p>
+                <button class="add-to-cart">ADICIONAR AO CARRINHO</button>
+            </div>
+
+            <div class="produtos-item6">
+                <img class="produto-image" src="images/p6.png" alt="alt6">
+                <box-icon id="idamei" class="item-amei" name='heart'></box-icon>
+                <box-icon class="item-compartilhar" name='share-alt'></box-icon>
+                <h2 class="produtos-item-titulo">ARVICA COFFEE PACK</h2>
+                <p style="display: inline;" class="produtos-item-preco">$25</p>
+                <button class="add-to-cart">ADICIONAR AO CARRINHO</button>
+            </div>
+        </div>
+
+        <button class="btn-see-all">Ver todos os produtos</button>
+    </section>
+
+    <script src="index.js"></script>
 </body>
 </html>
