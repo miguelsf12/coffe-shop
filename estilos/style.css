@@ -302,6 +302,9 @@ body {
     font-weight: 600;
     padding-top: 15px;
     padding-bottom: 25px;
+
+    position: relative;
+    left: 25px;
 }
 
 .produtos-item-preco {
@@ -311,6 +314,8 @@ body {
     padding: 5px 15px;
     border-radius: 3px;
     float: left;
+    position: relative;
+    left: 25px;
 }
 
 .add-to-cart {
@@ -322,6 +327,8 @@ body {
     background-color: #fff;
     padding: 5px;
     cursor: pointer;
+    position: relative;
+    right: 23px;
 
     transition-duration: 0.5s;
 }
