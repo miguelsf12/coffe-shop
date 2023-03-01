@@ -24,6 +24,7 @@ body {
     width: 80px;
 }
 
+
 #pesquisa {
     color: #fff;
 }
@@ -38,4 +39,11 @@ body {
     outline: none;
 
     display: block;
+}
+
+.backPage {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    background-color: #fff;
 }
