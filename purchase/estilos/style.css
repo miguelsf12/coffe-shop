@@ -35,23 +35,41 @@ body {
     margin-left: 20px;
 }
 
+.pesquisarCafes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
 
 #idpesquisa {
-    width: 90vw;
+    margin-top: 0px;
+    width: 50vw;
     height: 60px;
 
     padding: 15px;
-    margin-bottom: 20px;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 0.7em;
     outline: none;
-
-    display: none;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
 }
 
-.inputPesquisa {
-    display: flex;
-    justify-content: center;
+#btnBuscarCafe {
+    border: none;
+    background-color: var(--marrom-claro);
+    height: 60px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.4s;
+}
+
+#btnBuscarCafe:hover {
+    background-color: var(--marrom-escuro);
+    color: var(--branco);
 }
 
 .btnBackPage {

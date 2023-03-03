@@ -28,7 +28,14 @@
                 <box-icon onclick="pesquisar()" id="pesquisa" name='search' color='#ffffff' style="cursor: pointer;"></box-icon>
         </header>
 
-        <input type="search" name="pesquisa" id="idpesquisa" placeholder="Search Here...">
+
+        <div class="pesquisarCafes">
+            <input on type="search" name="pesquisa" id="idpesquisa" placeholder="Insira o nome do café.">
+
+            <input id="btnBuscarCafe" type="submit" value="Procurar">
+        </div>
+        
+        
 
         <section class="home">
             <div class="conteudo">
@@ -415,6 +422,7 @@
             </div>
          </div>
     </footer>
+    <script src="aviso.js"></script>
     <script src="index.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

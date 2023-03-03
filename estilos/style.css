@@ -9,6 +9,7 @@
 
 :root {
     --marrom-claro: #BF9663;
+    --marrom-escuro: #4e2f09;
     --branco: #fff;
 }
 
@@ -23,7 +24,7 @@ body {
     min-height: 100vh;
     background-image: url(../images/bg.png);
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
 }
@@ -75,16 +76,39 @@ body {
 
 /* INPUT ABAIXO */
 
+.pesquisarCafes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 #idpesquisa {
     margin-top: 40px;
-    width: 100vw;
+    width: 50vw;
     height: 60px;
 
     padding: 15px;
     font-weight: 700;
     outline: none;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
 
-    display: none;
+#btnBuscarCafe {
+    border: none;
+    background-color: var(--marrom-claro);
+    margin-top: 40px;
+    height: 60px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.4s;
+}
+
+#btnBuscarCafe:hover {
+    background-color: var(--marrom-escuro);
+    color: var(--branco);
 }
 
 /* HOME */
@@ -136,7 +160,7 @@ body {
 .btn-shop-now:hover {
     width: 200px;
     height: 50px;
-    background-color: #836847;
+    background-color: var(--marrom-escuro);
     transform-origin: 0% 0%;
 }
 
@@ -240,7 +264,7 @@ body {
 .btn-mais:hover {
     width: 190px;
     height: 30px;
-    background-color: #836847;
+    background-color: var(--marrom-escuro);
     transform-origin: 0% 0%;
 }
 
@@ -262,7 +286,7 @@ body {
     position: relative;
     left: 30px;
     top: 5px;
-    
+
     background-color: var(--branco);
     padding: 5px;
     border-radius: 5px;
@@ -289,7 +313,7 @@ body {
 
 .produtos-itens {
     display: grid;
-    
+
     grid-template-columns: auto auto auto;
     row-gap: 30px;
     column-gap: 20px;
@@ -376,7 +400,7 @@ body {
 }
 
 .btn-see-all:hover {
-    background-color: #836847;
+    background-color: var(--marrom-escuro);
     transform-origin: 0% 0%;
 }
 
@@ -411,7 +435,7 @@ body {
 }
 
 .t-sale-titulo,
-.on-sale-titulo{
+.on-sale-titulo {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2.2em;
     padding-bottom: 20px;
@@ -502,7 +526,7 @@ body {
     align-items: center;
     min-width: 100vw;
     min-height: 100vh;
-    
+
     margin-bottom: 40px;
 }
 
@@ -582,7 +606,7 @@ body {
 }
 
 .btn-avaliacao-mais:hover {
-    background-color: #836847;
+    background-color: var(--marrom-escuro);
 }
 
 /* FOOTER */
@@ -634,7 +658,7 @@ footer {
     font-weight: 600;
     font-size: 0.9em;
 
-    background-color: rgb(53, 53, 53);    
+    background-color: rgb(53, 53, 53);
     color: var(--branco);
 }
 
@@ -748,7 +772,7 @@ footer {
     font-size: 2em;
 }
 
-.coluna3 > ul > li {
+.coluna3>ul>li {
     padding-top: 15px;
 }
 
@@ -770,7 +794,7 @@ footer {
     display: flex;
     flex-direction: row;
     padding-bottom: 20px;
-} 
+}
 
 .footer-titulo-noticias {
     font-size: 1em;
@@ -789,7 +813,7 @@ footer {
     color: var(--marrom-claro);
 }
 
-.footer-img-noticia  {
+.footer-img-noticia {
     width: 70px;
     height: 70px;
     object-fit: cover;
