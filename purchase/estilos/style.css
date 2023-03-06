@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: acumin-pro, sans-serif;
+}
+
+:root {
+    --marrom-claro: #BF9663;
+    --marrom-escuro: #4e2f09;
+    --branco: #fff;
+}
+
+body {
+    background-color: #4e2f09;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+.header-logo {
+    width: 80px;
+}
+
+
+#pesquisa {
+    margin-left: 20px;
+}
+
+.pesquisarCafes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#idpesquisa {
+    margin-top: 0px;
+    width: 50vw;
+    height: 60px;
+
+    padding: 15px;
+    font-weight: 700;
+    font-size: 0.7em;
+    outline: none;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#btnBuscarCafe {
+    border: none;
+    background-color: var(--marrom-claro);
+    height: 60px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.4s;
+}
+
+#btnBuscarCafe:hover {
+    background-color: var(--marrom-escuro);
+    color: var(--branco);
+}
+
+.btnBackPage {
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.backPageTxt {
+    padding-left: 5px;
+    color: var(--branco);
+    font-weight: 900;
+}
+
+.backPage {
+    background-color: var(--marrom-claro);
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.backPage:hover {
+    color: var(--branco);
+    background-color: #9c5f14;
+}
+
+.produto {
+    padding: 20px;
+    margin: auto;
+    background-color: var(--branco);
+    height: 100%;
+    width: 90vw;
+}
+
+.produto-image {
+    margin: auto;
+    /* background-color: rgba(65, 65, 65, 0.397); */
+    border-radius: ;
+    width: 250px;
+    height: 250px;
+}
+
+.produto-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.produto-opcoes {}
+
+.produto-tittle {
+    padding-top: 20px;
+    color: var(--marrom-escuro);
+}
+
+.produto-desc {
+    color: var(--marrom-escuro);
+    padding-right: 10px;
+    width: 250px;
+    text-align: justify;
+}
+
+.produto-peso {
+    margin: 10px 0px;
+}
+
+.pesos {
+    border: none;
+    outline: none;
+    background-color: var(--marrom-claro);
+    padding: 5px;
+
+    color: var(--branco);
+    font-size: 1em;
+}
+
+.pesos option {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.produto-sabor {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-weight: 900;
+    color: var(--marrom-escuro);
+}
+
+.produto-sabor-trad,
+.produto-sabor-forte,
+.produto-sabor-extraf {
+    background-color: var(--marrom-claro);
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.produto-decisao {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.btndecisao {
+    margin-top: 15px;
+    min-width: 200px;
+    max-width: 500px;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 1em;
+    color: var(--marrom-escuro);
+    background-color: var(--marrom-claro);
+    border: none;
+    cursor: pointer;
+    outline-color: var(--marrom-escuro);
+    transition-duration: 0.4s;
+}
+
+.btndecisao:hover {
+    color: var(--branco);
+    background-color: #9c5f14;
+    transition-duration: 0.4s;
+}

@@ -1,0 +1,132 @@
+:root {
+    --marrom-claro: #BF9663;
+    --marrom-escuro: #4e2f09;
+    --branco: #fff;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .produto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produto-opcoes {
+        margin-left: 20px;
+    }
+
+    .produto-image {
+        width: 100%;
+        height: 470px;
+    }
+    
+    .produto-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .produto-tittle {
+        font-size: 1.8em;
+        font-weight: 700;
+    }
+    
+    .produto-desc {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .produto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produto-opcoes {
+        margin-left: 20px;
+    }
+
+    .produto-image {
+        margin: 0px;
+        width: 350px;
+        height: 432px;
+    }
+    
+    .produto-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    #idpesquisa {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .produto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produto-opcoes {
+        margin-left: 20px;
+    }
+
+    .produto-image {
+        margin: 0px;
+        width: 350px;
+        height: 433px;
+    }
+
+    #idpesquisa {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        margin: auto;
+        width: 800px;
+    }
+    .produto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        height: 100%;
+    }
+
+    .produto-opcoes {
+        margin-left: 20px;
+    }
+
+    .produto-image {
+        margin: 0px;
+        width: 350px;
+        height: 433px;
+    }
+
+    .btnBackPage {
+        width: 800px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .pesquisarCafes {
+        width: 800px;
+    }
+
+    #idpesquisa {
+        font-size: 1em;
+    }
+}

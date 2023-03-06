@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dar o nome do elemento pesquisado</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mqstyle.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header class="header">
+        <img class="header-logo" src="images/logo.png" alt="logo-coffe-shop">
+        <div class="cartPesquisa">
+            <box-icon class="header-cart" name='cart-alt' color='#ffffff'></box-icon>
+            <box-icon onclick="pesquisar()" id="pesquisa" name='search' color='#ffffff'
+                style="cursor: pointer;"></box-icon>
+        </div>
+    </header>
+
+    <div class="btnBackPage">
+        <box-icon onclick="voltarPagina()" class="backPage" name='left-arrow-alt' color='#ffffff'></box-icon>
+        <span class="backPageTxt">Voltar</span>
+    </div>
+
+    <div class="pesquisarCafes">
+        <input type="search" name="pesquisa" id="idpesquisa" placeholder="Insira o nome do café.">
+
+        <input onclick="buscarCafes()" id="btnBuscarCafe" type="submit" value="Procurar">
+    </div>
+
+    <section class="produto">
+        <div class="produto-image">
+            <img id="imagem-produto" src="images/cafe3coracoes.png" alt="foto-produto">
+        </div>
+
+        <div class="produto-opcoes">
+            <h1 class="produto-tittle">
+                CAFÉ MARGOUT
+            </h1>
+            <p class="produto-desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam repellat incidunt.
+            </p>
+            <div class="produto-peso">
+                <select class="pesos" name="peso" id="produtoPeso">
+                    <optgroup label="Selecione um peso">
+                        <option value="peso100g">100g</option>
+                        <option value="peso300g">300g</option>
+                        <option value="peso500g">500g</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="produto-sabor">
+                <span class="produto-sabor-trad">TRADICIONAL</span>
+                <span class="produto-sabor-forte">FORTE</span>
+                <span class="produto-sabor-extraf">EXTRA FORTE</span>
+            </div>
+            <div class="produto-decisao">
+                <button class="btndecisao">ADICIONAR AO CARRINHO</button>
+                <button class="btndecisao">COMPRAR AGORA</button>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="../index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
