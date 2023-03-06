@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,16 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediaquery.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body onresize="mudouTamanho()">
     <section class="introducao" data-aos="fade-down">
         <header class="introducao-header">
             <img class="introducao-header-logo" src="images/logo.png" alt="logo-coffe-shop">
             <nav class="introducao-header-nav">
-                <box-icon onclick="menu()" id="idmenu" name='menu' color='#ffffff' ></box-icon>
+                <box-icon onclick="menu()" id="idmenu" name='menu' color='#ffffff'></box-icon>
                 <div id="itens" class="introducao-header-nav-item">
                     <a href="#" class="introducao-header-nav-itens">HOME</a>
                     <a href="#" class="introducao-header-nav-itens">CLIENTES</a>
@@ -23,24 +26,25 @@
                     <a href="#products" class="introducao-header-nav-itens">PRODUTOS</a>
                     <a href="#contact" class="introducao-header-nav-itens">CONTATE-NOS</a>
                 </div>
-                
+
             </nav><box-icon class="introducao-header-nav-itens-cart" name='cart-alt' color='#ffffff'></box-icon>
-                <box-icon onclick="pesquisar()" id="pesquisa" name='search' color='#ffffff' style="cursor: pointer;"></box-icon>
+            <box-icon onclick="pesquisar()" id="pesquisa" name='search' color='#ffffff'
+                style="cursor: pointer;"></box-icon>
         </header>
 
 
         <div class="pesquisarCafes">
-            <input on type="search" name="pesquisa" id="idpesquisa" placeholder="Insira o nome do café.">
+            <input type="search" name="pesquisa" id="idpesquisa" placeholder="Insira o nome do café.">
 
-            <input id="btnBuscarCafe" type="submit" value="Procurar">
+            <input onclick="buscarCafes()" id="btnBuscarCafe" type="submit" value="Procurar">
         </div>
-        
-        
+
+
 
         <section class="home">
             <div class="conteudo">
                 <h1 class="conteudo-introducao-texto-titulo">COMECE SEU DIA <br>
-                COM CAFÉ</h1>
+                    COM CAFÉ</h1>
                 <p class="conteudo-introducao-texto-paragrafo" style="color: #fff;">
                     Lorem Ipsum is simply dummy text of the printing & typesetting industry. <br>
                     Ipsum has been the industry's standard dummy is simply dummy text of <br>
@@ -55,28 +59,31 @@
     <section id="history" class="historia-qualidades" data-aos="fade-up" data-aos-duration="1000">
         <div class="qualidades">
             <div class="qualidade1">
-                <img class="qualidades-itens" class="qualidades-aroma" src="images/coffee-cup.png" alt="copo-de-café" >
+                <img class="qualidades-itens" class="qualidades-aroma" src="images/coffee-cup.png" alt="copo-de-café">
                 <h2 class="titulo-qualidades">INCRÍVEL AROMA</h2>
                 <p class="descricao-qualidades">O café é preparado primeiramente <br>
                     torrando os grãos de café verde.</p>
             </div>
 
             <div class="qualidade2">
-                <img class="qualidades-itens" class="qualidades-alta-qualidade" src="images/distintivo.png" alt="distintivo">
+                <img class="qualidades-itens" class="qualidades-alta-qualidade" src="images/distintivo.png"
+                    alt="distintivo">
                 <h2 class="titulo-qualidades">ALTA QUALIDADE</h2>
                 <p class="descricao-qualidades">O café é preparado primeiramente <br>
                     torrando os grãos de café verde.</p>
             </div>
 
             <div class="qualidade3">
-                <img class="qualidades-itens" class="qualidades-cafe-puro" src="images/coffee-beans.png" alt="graos-de-cafe">
+                <img class="qualidades-itens" class="qualidades-cafe-puro" src="images/coffee-beans.png"
+                    alt="graos-de-cafe">
                 <h2 class="titulo-qualidades">GRÃOS PUROS</h2>
                 <p class="descricao-qualidades">O café é preparado primeiramente <br>
                     torrando os grãos de café verde.</p>
             </div>
 
             <div class="qualidade4">
-                <img class="qualidades-itens" class="qualidades-torracao" src="images/coffee-bag.png" alt="pacote-de-cafe">
+                <img class="qualidades-itens" class="qualidades-torracao" src="images/coffee-bag.png"
+                    alt="pacote-de-cafe">
                 <h2 class="titulo-qualidades">TORRAÇÃO ADEQUADA</h2>
                 <p class="descricao-qualidades">O café é preparado primeiramente <br>
                     torrando os grãos de café verde.</p>
@@ -85,17 +92,17 @@
 
         <div class="historia">
             <img class="about-image" src="images/about.jpg" alt="about">
-           
+
             <div class="descricao-historia">
                 <h2 class="titulo-about">NOSSA HISTÓRIA</h2>
                 <p class="about-p1">
                     Our incredibly rare beans come from humble beginnings in Yemen,
-                    where decades of political turmoil once forced local farmers to start 
+                    where decades of political turmoil once forced local farmers to start
                     growing Khat, a narcotic native to the Arabian Peninsula.
                 </p>
                 <p class="about-p2">
-                    The Dawoodi Bohra Community changed this, removing all the Khat 
-                    plants and replacing them with coffee, bringing this humble brew back 
+                    The Dawoodi Bohra Community changed this, removing all the Khat
+                    plants and replacing them with coffee, bringing this humble brew back
                     toitsroots.
                 </p>
                 <p class="about-p3">
@@ -185,13 +192,16 @@
                     </div>
                     <div class="t-sale-item1-infos-icons">
                         <div class="infos-icone1">
-                            <span class="material-symbols-outlined" style="color: #BF9663; border: 1px solid #BF9663; border-radius: 50%; padding: 3px; font-size: 1em;">visibility</span>
+                            <span class="material-symbols-outlined"
+                                style="color: #BF9663; border: 1px solid #BF9663; border-radius: 50%; padding: 3px; font-size: 1em;">visibility</span>
                         </div>
                         <div class="infos-icone2">
-                            <box-icon name='cart-alt' color='#BF9663' style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
+                            <box-icon name='cart-alt' color='#BF9663'
+                                style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
                         </div>
                         <div class="infos-icone3">
-                            <box-icon name='heart' color='#BF9663' style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
+                            <box-icon name='heart' color='#BF9663'
+                                style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
                         </div>
                     </div>
                 </div>
@@ -208,13 +218,16 @@
                     </div>
                     <div class="t-sale-item2-infos-icons">
                         <div class="infos-icone1">
-                            <span class="material-symbols-outlined" style="color: #BF9663; border: 1px solid #BF9663; border-radius: 50%; padding: 3px; font-size: 1em;">visibility</span>
+                            <span class="material-symbols-outlined"
+                                style="color: #BF9663; border: 1px solid #BF9663; border-radius: 50%; padding: 3px; font-size: 1em;">visibility</span>
                         </div>
                         <div class="infos-icone2">
-                            <box-icon name='cart-alt' color='#BF9663' style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
+                            <box-icon name='cart-alt' color='#BF9663'
+                                style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
                         </div>
                         <div class="infos-icone3">
-                            <box-icon name='heart' color='#BF9663' style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
+                            <box-icon name='heart' color='#BF9663'
+                                style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
                         </div>
                     </div>
                 </div>
@@ -234,13 +247,16 @@
                     </div>
                     <div class="on-sale-item1-infos-icons">
                         <div class="infos-icone1">
-                            <span class="material-symbols-outlined" style="color: #BF9663; border: 1px solid #BF9663; border-radius: 50%; padding: 3px; font-size: 1em;">visibility</span>
+                            <span class="material-symbols-outlined"
+                                style="color: #BF9663; border: 1px solid #BF9663; border-radius: 50%; padding: 3px; font-size: 1em;">visibility</span>
                         </div>
                         <div class="infos-icone2">
-                            <box-icon name='cart-alt' color='#BF9663' style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
+                            <box-icon name='cart-alt' color='#BF9663'
+                                style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
                         </div>
                         <div class="infos-icone3">
-                            <box-icon name='heart' color='#BF9663' style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
+                            <box-icon name='heart' color='#BF9663'
+                                style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
                         </div>
                     </div>
                 </div>
@@ -257,13 +273,16 @@
                     </div>
                     <div class="on-sale-item2-infos-icons">
                         <div class="infos-icone1">
-                            <span class="material-symbols-outlined" style="color: #BF9663; border: 1px solid #BF9663; border-radius: 50%; padding: 3px; font-size: 1em;">visibility</span>
+                            <span class="material-symbols-outlined"
+                                style="color: #BF9663; border: 1px solid #BF9663; border-radius: 50%; padding: 3px; font-size: 1em;">visibility</span>
                         </div>
                         <div class="infos-icone2">
-                            <box-icon name='cart-alt' color='#BF9663' style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
+                            <box-icon name='cart-alt' color='#BF9663'
+                                style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
                         </div>
                         <div class="infos-icone3">
-                            <box-icon name='heart' color='#BF9663' style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
+                            <box-icon name='heart' color='#BF9663'
+                                style="border: 1px solid #BF9663; border-radius: 50%; padding: 3px;"></box-icon>
                         </div>
                     </div>
                 </div>
@@ -284,11 +303,11 @@
                         nostrud exercitation uliamco laboris.
                     </p>
                     <div class="descricao-estrelas">
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
                     </div>
                 </div>
                 <div class="identificacao-cliente">
@@ -309,11 +328,11 @@
                         nostrud exercitation uliamco laboris.
                     </p>
                     <div class="descricao-estrelas">
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
                     </div>
                 </div>
                 <div class="identificacao-cliente">
@@ -334,11 +353,11 @@
                         nostrud exercitation uliamco laboris.
                     </p>
                     <div class="descricao-estrelas">
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
-                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400' ></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
+                        <box-icon class="cliente1-estrela" name='star' type='solid' color='#ffd400'></box-icon>
                     </div>
                 </div>
                 <div class="identificacao-cliente">
@@ -355,12 +374,12 @@
 
     <footer>
         <h2 class="footer-titulo">O CAFÉ REFRESCA A MENTE</h2>
-         <div class="input">
+        <div class="input">
             <input class="footer-input" type="email" name="email" id="idemail" placeholder="Digite Seu Email">
             <input class="footer-submit" type="submit" value="Inscrever">
         </div>
 
-         <div class="footer-descricao">
+        <div class="footer-descricao">
             <div class="coluna1" data-aos="fade-up" data-aos-duration="1000">
                 <img class="footer-logo" src="images/logo.png" alt="logo-coffe-shop">
                 <p style="color: #fff; line-height: 25px; font-weight: 600;">
@@ -371,20 +390,20 @@
                     of Excel Technologies Ltd
                 </p>
                 <div class="icones-redes">
-                    <box-icon name='facebook-square' type='logo' color='#fff' ></box-icon>
-                    <box-icon name='instagram-alt' type='logo' color='#ffffff' ></box-icon>
+                    <box-icon name='facebook-square' type='logo' color='#fff'></box-icon>
+                    <box-icon name='instagram-alt' type='logo' color='#ffffff'></box-icon>
                 </div>
             </div>
 
             <div id="contact" class="coluna2" data-aos="fade-up" data-aos-duration="1000">
                 <h2 class="footer-contato-titulo">Contato</h2>
                 <p class="footer-localizacao" style="color: #fff; line-height: 1.5em;">
-                    250  Northern Blvd <br>
+                    250 Northern Blvd <br>
                     Suite 324-1033 <br>
                     Albany, NY 12204-1200
                 </p>
                 <div class="contato-numero">
-                    <box-icon name='phone-call' color='#ffffff' style="padding-right: 5px;" ></box-icon>
+                    <box-icon name='phone-call' color='#ffffff' style="padding-right: 5px;"></box-icon>
                     <p style="color: #fff;">+123 456 789 00</p>
                 </div>
             </div>
@@ -406,7 +425,7 @@
 
                     <div class="descricao-noticia">
                         <p class="footer-descricao-noticia">Best Smell of Americano <br>
-                        Coffee Trins</p>
+                            Coffee Trins</p>
                         <p class="footer-data-noticia">DECEMBER 30 - 2021</p>
                     </div>
                 </div>
@@ -415,12 +434,12 @@
 
                     <div class="descricao-noticia">
                         <p class="footer-descricao-noticia">Best Smell of Americano <br>
-                        Coffee Trins</p>
+                            Coffee Trins</p>
                         <p class="footer-data-noticia">DECEMBER 30 - 2021</p>
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
     </footer>
     <script src="aviso.js"></script>
     <script src="index.js"></script>
@@ -430,4 +449,5 @@
         AOS.init();
     </script>
 </body>
+
 </html>

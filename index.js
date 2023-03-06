@@ -35,23 +35,22 @@ function mudouTamanho() {
 }
 
 // -------- BUSCA DOS CAFÉS
-
-const cafePesquisado = document.getElementById("idpesquisa").value
+const cafePesquisado = document.getElementById("idpesquisa") // input onde pesquisa
 
 const cafes = [
     {
-        nome: ["3 Corações", "3 Coraçoes", "Três Corações", "Tres Coraçoes"],
-        intensidade: ["tradicional", "forte", "Extra Forte"],
+        nome: ["3 corações", "3 coraçoes", "três corações", "tres coraçoes"],
+        intensidade: ["tradicional", "forte", "extra forte"],
         peso: [100, 300, 500]
     },
     {
-        nome: ["Barão", "Barao"],
-        intensidade: ["tradicional", "forte", "Extra Forte"],
+        nome: ["barão", "barao"],
+        intensidade: ["tradicional", "forte", "extra forte"],
         peso: [100, 300, 500]
     },
     {
-        nome: ["Pilão", "Pilao"],
-        intensidade: ["tradicional", "forte", "Extra Forte"],
+        nome: ["pilão", "pilao"],
+        intensidade: ["tradicional", "forte", "extra forte"],
         peso: [100, 300, 500]
     }
 ]
@@ -59,9 +58,26 @@ const cafes = [
 const btnBuscarCafe = document.querySelector("#btnBuscarCafe")
 
 function buscarCafes() {
-
+    
+    for (let i = 0; i < cafes.length; i++) {
+        // CAFE 3 CORAÇÕES
+        if (cafePesquisado.value === cafes[0].nome[i]) {
+            location.href = "/purchase/purchaseCafe1.html"
+        // CAFE BARAO
+        } else if (cafePesquisado.value === cafes[1].nome[i]) {
+            location.href = "/purchase/purchaseCafe2.html"
+        // CAFE PILAO
+        } else if (cafePesquisado.value === cafes[2].nome[i]) {
+            location.href = "/purchase/purchaseCafe3.html"
+        }
+    }
 }
 
-console.log(cafes[0].intensidade[0] === "Tradicional")
+const btnVoltar = document.querySelector(".backPage")
 
-console.log(cafes[0].nome[0] == "3 Corações") // true ou false usar for
+function voltarPagina() {
+    location.href = "/index.html"
+}
+
+// console.log(cafes[0].nome[0])
+// console.log(cafes[0].nome[0] == "3 Corações") // true ou false usar for

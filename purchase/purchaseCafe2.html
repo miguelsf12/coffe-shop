@@ -23,20 +23,19 @@
     </header>
 
     <div class="btnBackPage">
-        <box-icon class="backPage" name='left-arrow-alt' color='#ffffff'></box-icon>
+        <box-icon onclick="voltarPagina()" class="backPage" name='left-arrow-alt' color='#ffffff'></box-icon>
         <span class="backPageTxt">Voltar</span>
     </div>
 
     <div class="pesquisarCafes">
-        <input on type="search" name="pesquisa" id="idpesquisa" placeholder="Insira o nome do café.">
+        <input type="search" name="pesquisa" id="idpesquisa" placeholder="Insira o nome do café.">
 
-        <input id="btnBuscarCafe" type="submit" value="Procurar">
+        <input onclick="buscarCafes()" id="btnBuscarCafe" type="submit" value="Procurar">
     </div>
 
     <section class="produto">
         <div class="produto-image">
-            <img src="images/mg_coffee_purchase_page_in_brown_and_white_colors_and_maybe_wit_bdbf715e-64d9-4c04-a559-f2e184394f8c2.png"
-                alt="foto-produto">
+            <img id="imagem-produto" src="images/cafebarao.png" alt="foto-produto">
         </div>
 
         <div class="produto-opcoes">
@@ -68,8 +67,6 @@
 
         </div>
     </section>
-
-    <script src="pageCompras.js"></script>
     <script src="../index.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
